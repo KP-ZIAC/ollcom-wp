@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="keywords"
+      content="Інтернет PON Ужгород ОЛЛ-КОМ ISP"
+    />
+    <meta name="description" content="ОЛЛ-КОМ ISP — інтернет та телебачення в Закарпатті" />
+    <title>ISP ОЛЛ-КОМ</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/tariffs-data.js" defer></script>
+    <script src="js/common.js" defer></script>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body class="has-bg page-home">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a href="index.html" class="site-logo">
+          <img src="images/logo.svg" alt="ОЛЛ-КОМ" width="120" height="48" />
+        </a>
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="navMenu"
+          aria-label="Меню"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav id="navMenu" class="site-nav">
+          <a href="#inet">Інтернет</a>
+          <a href="#tv">ТБ</a>
+          <a
+            href="https://next.privat24.ua/payments/form/%7B%22token%22:%220dc3e0e4-ba93-4ebe-8343-b3335fdfdbdd%22%7D"
+            target="_blank"
+            rel="noopener"
+            >Оплата</a
+          >
+          <a href="speed-test-page.html" data-nav>Speed Test</a>
+          <a href="#contact">Контакти</a>
+          <a href="profile-login.html" class="nav-cta nav-login" data-nav>Вхід</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="site-wrap">
+      <section class="hero" aria-label="Акції та пропозиції">
+        <div class="hero__track">
+          <div class="hero__slide is-active">
+            <div class="hero__media">
+              <img src="images/hero-promo.jpg" alt="Акційні тарифи інтернету" width="1200" height="420" decoding="async" />
+            </div>
+            <div class="hero__caption">
+              <div class="hero__caption-inner">
+                <span class="hero__badge">Акція</span>
+                <h2 class="hero__title">Інтернет від 200 грн/міс</h2>
+                <p class="hero__text">
+                  Вигідні умови підключення для багатоквартирних будинків та приватного сектору в Закарпатті.
+                </p>
+                <a class="btn hero__cta" href="#inet">Обрати тариф</a>
+              </div>
+            </div>
+          </div>
+          <div class="hero__slide">
+            <div class="hero__media">
+              <img src="images/hero-internet.jpg" alt="Оптоволоконний інтернет" width="1200" height="420" decoding="async" />
+            </div>
+            <div class="hero__caption">
+              <div class="hero__caption-inner">
+                <span class="hero__badge">Інтернет</span>
+                <h2 class="hero__title">Оптоволокно PON до 1 Гбіт/с</h2>
+                <p class="hero__text">
+                  Стабільне з'єднання для дому, роботи та розваг. Тарифи на будь-який бюджет.
+                </p>
+                <a class="btn hero__cta" href="#inet">Переглянути тарифи</a>
+              </div>
+            </div>
+          </div>
+          <div class="hero__slide">
+            <div class="hero__media">
+              <img src="images/hero-tv.jpg" alt="Цифрове телебачення" width="1200" height="420" decoding="async" />
+            </div>
+            <div class="hero__caption">
+              <div class="hero__caption-inner">
+                <span class="hero__badge">Телебачення</span>
+                <h2 class="hero__title">Цифрове ТБ OmegaTV</h2>
+                <p class="hero__text">
+                  Понад 180 каналів у HD. Пакети від 0 грн/міс разом з інтернетом.
+                </p>
+                <a class="btn hero__cta" href="#tv">Пакети ТБ</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="hero__arrow hero__arrow--prev" aria-label="Попередній слайд">‹</button>
+        <button type="button" class="hero__arrow hero__arrow--next" aria-label="Наступний слайд">›</button>
+        <div class="hero__nav">
+          <div class="hero__progress" aria-hidden="true">
+            <span class="hero__progress-fill"></span>
+          </div>
+          <div class="hero__dots">
+            <button type="button" class="hero__dot is-active" aria-label="Слайд 1"></button>
+            <button type="button" class="hero__dot" aria-label="Слайд 2"></button>
+            <button type="button" class="hero__dot" aria-label="Слайд 3"></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats-bar" aria-label="Переваги">
+        <div class="container stats-bar__grid">
+          <div class="stat-item reveal">
+            <strong class="stat-item__value">1000</strong>
+            <span class="stat-item__label">Мбіт/с максимум</span>
+          </div>
+          <div class="stat-item reveal reveal-delay-1">
+            <strong class="stat-item__value">24/7</strong>
+            <span class="stat-item__label">Техпідтримка</span>
+          </div>
+          <div class="stat-item reveal reveal-delay-2">
+            <strong class="stat-item__value">PON</strong>
+            <span class="stat-item__label">Оптоволокно</span>
+          </div>
+          <div class="stat-item reveal reveal-delay-3">
+            <strong class="stat-item__value">180+</strong>
+            <span class="stat-item__label">Телеканалів</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="features-strip container">
+        <article class="feature-pill reveal">
+          <span class="feature-pill__icon" aria-hidden="true">⚡</span>
+          <div>
+            <h3>Швидке підключення</h3>
+            <p>Стабільний інтернет без зайвих очікувань</p>
+          </div>
+        </article>
+        <article class="feature-pill reveal reveal-delay-1">
+          <span class="feature-pill__icon" aria-hidden="true">🛟</span>
+          <div>
+            <h3>Підтримка на зв’язку</h3>
+            <p>Абонентський відділ і технічна служба щодня</p>
+          </div>
+        </article>
+        <article class="feature-pill reveal reveal-delay-2">
+          <span class="feature-pill__icon" aria-hidden="true">📍</span>
+          <div>
+            <h3>Закарпаття</h3>
+            <p>Ужгород та населені пункти району</p>
+          </div>
+        </article>
+      </section>
+
+      <section id="inet" class="section section--alt">
+        <div class="container">
+        <div class="section-head reveal">
+          <span class="section-eyebrow">Тарифи</span>
+          <h2 class="section-title">Інтернет для дому та бізнесу</h2>
+          <p class="section-lead">
+            Оберіть тип підключення — прозорі умови без прихованих платежів
+          </p>
+        </div>
+        <div id="inetTabs" class="tariff-tabs reveal reveal-delay-2"></div>
+        <div id="inetPlans" class="plans-grid reveal reveal-delay-3"></div>
+        </div>
+      </section>
+
+      <section id="speed" class="section section-speed">
+        <div class="container speed-block reveal">
+          <div class="speed-block__visual">
+            <img src="images/speed.jpg" alt="Тест швидкості інтернету" width="280" />
+          </div>
+          <div class="speed-block__text">
+            <span class="section-eyebrow section-eyebrow--light">Speed Test</span>
+            <h2 class="speed-block__title">Перевірте швидкість за хвилину</h2>
+            <p>
+              Без встановлення програм. Запустіть тест і одразу побачите реальні показники
+              завантаження та відвантаження.
+            </p>
+            <p class="speed-block__note">
+              Для найточнішого результату підключіть кабель напряму до ПК і закрийте
+              програми, що навантажують мережу.
+            </p>
+            <a href="speed-test-page.html" class="btn btn--light">Запустити тест</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="tv" class="section">
+        <div class="container">
+        <div class="section-head reveal">
+          <span class="section-eyebrow">Телебачення</span>
+          <h2 class="section-title">Цифрове ТБ OmegaTV</h2>
+          <p class="section-lead">
+            Контент від «Омега ТВ» — <a href="omegatv.html">детальніше про пакети</a>
+          </p>
+        </div>
+        <div id="tvPlans" class="tv-grid reveal reveal-delay-2"></div>
+        </div>
+      </section>
+
+      <section id="zayavka" class="section section--cta">
+        <div class="container">
+        <div class="section-head reveal">
+          <span class="section-eyebrow">Підключення</span>
+          <h2 class="section-title">Залиште заявку — ми передзвонимо</h2>
+          <p class="section-lead">Заповніть форму, і менеджер уточнить адресу та тариф</p>
+        </div>
+        <div class="form-section reveal reveal-delay-1">
+          <form id="connectForm" class="card form-panel" novalidate>
+            <div class="form-group">
+              <label class="form-label" for="username">Ваше ім’я</label>
+              <input
+                id="username"
+                class="form-input"
+                type="text"
+                placeholder="Іван Петренко"
+                autocomplete="name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="phone">Телефон</label>
+              <input
+                id="phone"
+                class="form-input"
+                type="tel"
+                placeholder="+38(___)___-__-__"
+                autocomplete="tel"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="address">Адреса</label>
+              <input
+                id="address"
+                class="form-input"
+                type="text"
+                placeholder="м. Ужгород, вул. …"
+                autocomplete="street-address"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="service">Послуга</label>
+              <select id="service" class="form-select" required>
+                <option value="" disabled selected>Оберіть послугу</option>
+                <option value="internet">Інтернет</option>
+                <option value="tv">Телебачення</option>
+                <option value="internet+tv">Інтернет + ТВ</option>
+              </select>
+            </div>
+            <button type="submit" class="btn">Замовити підключення</button>
+            <div id="formToast" class="form-toast" role="status" aria-live="polite"></div>
+          </form>
+          <aside class="form-aside card">
+            <h3>Що буде далі?</h3>
+            <ul class="form-aside__list">
+              <li>Дзвінок протягом робочого дня</li>
+              <li>Перевірка технічної можливості</li>
+              <li>Підбір тарифу та дата підключення</li>
+            </ul>
+          </aside>
+        </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section section--alt">
+        <div class="container">
+        <div class="section-head reveal">
+          <span class="section-eyebrow">Контакти</span>
+          <h2 class="section-title">Ми на зв’язку щодня</h2>
+        </div>
+        <div class="contact-grid reveal reveal-delay-1">
+          <a
+            class="contact-map"
+            href="https://www.google.com/maps/place/%D0%B2%D1%83%D0%BB%D0%B8%D1%86%D1%8F+%D0%A4%D0%B5%D0%B4%D0%B8%D0%BD%D1%86%D1%8F,+2,+%D0%A3%D0%B6%D0%B3%D0%BE%D1%80%D0%BE%D0%B4"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              src="images/location.jpg"
+              alt="м. Ужгород, вул. Фединця, 2 «Рів’єра»"
+            />
+          </a>
+          <div class="contact-cards">
+            <article class="contact-card card">
+              <h3>Адреса</h3>
+              <p>м. Ужгород, вул. Фединця, 2<br />ТЦ «Рів’єра»</p>
+            </article>
+            <article class="contact-card card">
+              <h3>Телефон</h3>
+              <p><a href="tel:+380985491717">(098) 549-17-17</a></p>
+              <p><a href="tel:+380955491717">(095) 549-17-17</a></p>
+              <p><a href="viber://chat?number=+380955491717">Viber</a> · <a href="https://t.me/OLL_KOM" target="_blank" rel="noopener">Telegram</a></p>
+            </article>
+            <article class="contact-card card">
+              <h3>Email</h3>
+              <p><a href="mailto:info@ollcom.net.ua">info@ollcom.net.ua</a></p>
+              <p><a href="dogovir.html">Публічний договір</a></p>
+            </article>
+            <article class="contact-card card">
+              <h3>Графік</h3>
+              <p>Пн–Нд 8:00–20:00<br />перерви 12:00–12:30 та 16:00–16:30</p>
+            </article>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <footer class="site-footer container">
+        2018–2025 © ОЛЛ-КОМ · Powered by
+        <a href="https://cyber-spells.dev/" target="_blank" rel="noopener">Cyber Spells</a>
+      </footer>
+    </div>
+
+    <div
+      id="channelModal"
+      class="modal-overlay"
+      aria-hidden="true"
+      role="dialog"
+      aria-labelledby="modalTitle"
+    >
+      <div class="modal">
+        <div class="modal__header">
+          <h2 id="modalTitle" class="modal__title">Пакет ТБ</h2>
+          <button type="button" class="modal__close" data-modal-close aria-label="Закрити">×</button>
+        </div>
+        <div class="modal__body"></div>
+        <div class="modal__footer">
+          <button type="button" class="btn btn--ghost" data-modal-close>Закрити</button>
+        </div>
+      </div>
+    </div>
+
+    <a href="#" class="scroll-top" aria-label="Наверх">↑</a>
+  </body>
+</html>

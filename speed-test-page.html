@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Вимірювання швидкості інтернету — ОЛЛ-КОМ ISP" />
+    <title>Тест швидкості — ОЛЛ-КОМ</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/speed-test.css" />
+    <script src="speedtest.js" defer></script>
+    <script src="js/common.js" defer></script>
+    <script src="js/speed-test.js" defer></script>
+  </head>
+  <body class="has-bg page-sub page-speed">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a href="index.html" class="site-logo">
+          <img src="images/logo.svg" alt="ОЛЛ-КОМ" width="120" height="48" />
+        </a>
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="navMenu"
+          aria-label="Меню"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav id="navMenu" class="site-nav">
+          <a href="index.html">Головна</a>
+          <a href="index.html#inet">Тарифи</a>
+          <a href="speed-test-page.html" class="is-active" data-nav>Speed Test</a>
+          <a href="index.html#contact">Контакти</a>
+          <a href="profile-login.html" class="nav-cta nav-login" data-nav>Вхід</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="app site-wrap">
+      <header class="page-head reveal">
+        <span class="section-eyebrow">Speed Test</span>
+        <h1 class="page-head__title">Тест швидкості інтернету</h1>
+        <p class="page-head__lead">
+          Послідовне вимірювання затримки, завантаження та відвантаження. Результати
+          оновлюються в реальному часі.
+        </p>
+      </header>
+
+      <div class="speed-shell reveal reveal-delay-1">
+        <div class="speed-shell__block">
+          <div class="steps-wrap" aria-label="Етапи тесту">
+            <div
+              id="stepsProgress"
+              class="steps-progress"
+              role="progressbar"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-valuenow="0"
+            ></div>
+            <ol class="steps">
+              <li class="step is-active" data-step="idle">
+                <span class="step-icon">1</span>
+                <span class="step-label">Готовність</span>
+              </li>
+              <li class="step" data-step="latency">
+                <span class="step-icon">2</span>
+                <span class="step-label">Затримка</span>
+              </li>
+              <li class="step" data-step="download">
+                <span class="step-icon">3</span>
+                <span class="step-label">Завантаження</span>
+              </li>
+              <li class="step" data-step="upload">
+                <span class="step-icon">4</span>
+                <span class="step-label">Відвантаження</span>
+              </li>
+              <li class="step" data-step="done">
+                <span class="step-icon">✓</span>
+                <span class="step-label">Результат</span>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <section class="speed-shell__block control reveal reveal-delay-2" aria-labelledby="control-heading">
+          <h2 id="control-heading" class="visually-hidden">Керування тестом</h2>
+          <p id="statusText" class="status-text" role="status" aria-live="polite">
+            Натисніть кнопку, щоб почати вимірювання швидкості інтернету
+          </p>
+          <button
+            type="button"
+            id="startStopBtn"
+            class="btn-start"
+            aria-describedby="statusText"
+          >
+            <span class="btn-icon" id="iconPlay" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z" /></svg>
+            </span>
+            <span class="btn-icon" id="iconStop" hidden aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="6" width="12" height="12" rx="1" /></svg>
+            </span>
+            <span id="btnLabel">Почати тест</span>
+          </button>
+        </section>
+
+        <section class="speed-shell__block metrics reveal reveal-delay-3" aria-label="Результати">
+          <article class="metric-card metric-card--ping" data-metric="ping">
+            <div class="metric-label">
+              <svg class="metric-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" /></svg>
+              Ping
+            </div>
+            <div id="pingText" class="metric-value"></div>
+            <div class="metric-unit">мс</div>
+          </article>
+
+          <article class="metric-card metric-card--jitter" data-metric="jitter">
+            <div class="metric-label">
+              <svg class="metric-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 12h4l3-9 4 18 3-9h4" /></svg>
+              Jitter
+            </div>
+            <div id="jitText" class="metric-value"></div>
+            <div class="metric-unit">мс</div>
+          </article>
+
+          <article class="metric-card metric-card--download" data-metric="download">
+            <div class="metric-label">
+              <svg class="metric-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12M8 11l4 4 4-4M4 21h16" /></svg>
+              Завантаження
+            </div>
+            <div id="dlText" class="metric-value"></div>
+            <div class="metric-unit">Мбіт/с</div>
+          </article>
+
+          <article class="metric-card metric-card--upload" data-metric="upload">
+            <div class="metric-label">
+              <svg class="metric-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21V9M8 13l4-4 4 4M4 3h16" /></svg>
+              Відвантаження
+            </div>
+            <div id="ulText" class="metric-value"></div>
+            <div class="metric-unit">Мбіт/с</div>
+          </article>
+        </section>
+
+        <div class="speed-shell__block meta reveal">
+          Ваша IP-адреса: <strong><span id="ip"></span></strong>
+        </div>
+      </div>
+
+      <footer class="speed-footer reveal">
+        <a href="index.html">На головну</a>
+        <span class="speed-footer-sep">·</span>
+        <a href="https://github.com/librespeed/speedtest">LibreSpeed</a>
+      </footer>
+    </main>
+
+    <a href="#" class="scroll-top" aria-label="Наверх">↑</a>
+  </body>
+</html>

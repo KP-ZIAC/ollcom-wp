@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OmegaTV — Кабінет ОЛЛ-КОМ</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/profile.css" />
+    <script src="js/common.js" defer></script>
+    <script src="js/profile-menu.js" defer></script>
+    <script src="js/profile.js" defer></script>
+  </head>
+  <body class="has-bg page-sub page-profile" data-profile-page="profile-omega.html">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a href="index.html" class="site-logo">
+          <img src="images/logo.svg" alt="ОЛЛ-КОМ" width="120" height="48" />
+        </a>
+        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="navMenu" aria-label="Меню">
+          <span></span><span></span><span></span>
+        </button>
+        <nav id="navMenu" class="site-nav">
+          <a href="index.html">На сайт</a>
+          <a href="profile-payment.html">Оплата</a>
+          <a href="speed-test-page.html">Speed Test</a>
+          <a href="profile-main.html" class="nav-cta">Кабінет</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="site-wrap container profile-layout">
+      <aside id="profileSidebar" class="card profile-sidebar reveal"></aside>
+
+      <main class="profile-content reveal reveal-delay-1">
+        <div class="card profile-panel">
+          <header class="page-head page-head--compact">
+            <span class="section-eyebrow">Телебачення</span>
+            <h1 class="page-head__title">OmegaTV — передплати</h1>
+          </header>
+          <div class="alert-box">
+            При відписці від передплати з рахунку одразу стягнеться сума, еквівалентна вартості
+            передплати. Щоб відписатися без списання — зверніться до техпідтримки.
+          </div>
+
+          <h2 class="profile-section-title">Наявні передплати</h2>
+          <div class="subs-grid">
+            <article class="card sub-card">
+              <h3 class="sub-card__name">VIP</h3>
+              <div class="sub-card__row"><span>Абонплата</span><strong>0 UAH</strong></div>
+              <div class="sub-card__row"><span>Базовий</span><span class="status-badge status-badge--yes">Так</span></div>
+              <div class="sub-card__row"><span>Підписка</span><span class="status-badge status-badge--no">Ні</span></div>
+              <button type="button" class="btn btn--ghost btn--block" data-subscribe-dialog aria-controls="dialog-vip">Підписатись</button>
+            </article>
+
+            <article class="card sub-card">
+              <h3 class="sub-card__name">АКЦІЙНИЙ1</h3>
+              <div class="sub-card__row"><span>Абонплата</span><strong>0 UAH</strong></div>
+              <div class="sub-card__row"><span>Базовий</span><span class="status-badge status-badge--yes">Так</span></div>
+              <div class="sub-card__row"><span>Підписка</span><span class="status-badge status-badge--no">Ні</span></div>
+              <button type="button" class="btn btn--ghost btn--block" data-subscribe-dialog aria-controls="dialog-promo1">Підписатись</button>
+            </article>
+
+            <article class="card sub-card">
+              <h3 class="sub-card__name">Ефір</h3>
+              <div class="sub-card__row"><span>Абонплата</span><strong>119 UAH</strong></div>
+              <div class="sub-card__row"><span>Базовий</span><span class="status-badge status-badge--yes">Так</span></div>
+              <div class="sub-card__row"><span>Підписка</span><span class="status-badge status-badge--no">Ні</span></div>
+              <p class="sub-card__warn">Недостатньо коштів на рахунку для оформлення</p>
+            </article>
+
+            <article class="card sub-card">
+              <h3 class="sub-card__name">Преміум</h3>
+              <div class="sub-card__row"><span>Абонплата</span><strong>138 UAH</strong></div>
+              <div class="sub-card__row"><span>Базовий</span><span class="status-badge status-badge--yes">Так</span></div>
+              <div class="sub-card__row"><span>Підписка</span><span class="status-badge status-badge--no">Ні</span></div>
+              <p class="sub-card__warn">Недостатньо коштів на рахунку для оформлення</p>
+            </article>
+
+            <article class="card sub-card">
+              <h3 class="sub-card__name">Промо</h3>
+              <div class="sub-card__row"><span>Абонплата</span><strong>0 UAH</strong></div>
+              <div class="sub-card__row"><span>Базовий</span><span class="status-badge status-badge--yes">Так</span></div>
+              <div class="sub-card__row"><span>Підписка</span><span class="status-badge status-badge--no">Ні</span></div>
+              <button type="button" class="btn btn--ghost btn--block" data-subscribe-dialog aria-controls="dialog-promo">Підписатись</button>
+            </article>
+
+            <article class="card sub-card">
+              <h3 class="sub-card__name">Акційний</h3>
+              <div class="sub-card__row"><span>Абонплата</span><strong>0 UAH</strong></div>
+              <div class="sub-card__row"><span>Базовий</span><span class="status-badge status-badge--yes">Так</span></div>
+              <div class="sub-card__row"><span>Підписка</span><span class="status-badge status-badge--no">Ні</span></div>
+              <button type="button" class="btn btn--ghost btn--block" data-subscribe-dialog aria-controls="dialog-sale">Підписатись</button>
+            </article>
+
+            <article class="card sub-card">
+              <h3 class="sub-card__name">VIP HD</h3>
+              <div class="sub-card__row"><span>Абонплата</span><strong>0 UAH</strong></div>
+              <div class="sub-card__row"><span>Базовий</span><span class="status-badge status-badge--yes">Так</span></div>
+              <div class="sub-card__row"><span>Підписка</span><span class="status-badge status-badge--no">Ні</span></div>
+              <button type="button" class="btn btn--ghost btn--block" data-subscribe-dialog aria-controls="dialog-viphd">Підписатись</button>
+            </article>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <dialog id="dialog-vip" class="profile-dialog">
+      <div class="profile-dialog__inner">
+        <p>Я добре обдумав(ла) рішення та усвідомлюю всі наслідки активації послуги.</p>
+        <div class="profile-dialog__actions">
+          <a href="?module=omegatv&amp;subscribe=7411" class="btn">Згоден</a>
+          <button type="button" class="btn btn--ghost" data-dialog-close>Відміна</button>
+        </div>
+      </div>
+    </dialog>
+    <dialog id="dialog-promo1" class="profile-dialog">
+      <div class="profile-dialog__inner">
+        <p>Я добре обдумав(ла) рішення та усвідомлюю всі наслідки активації послуги.</p>
+        <div class="profile-dialog__actions">
+          <a href="?module=omegatv&amp;subscribe=7412" class="btn">Згоден</a>
+          <button type="button" class="btn btn--ghost" data-dialog-close>Відміна</button>
+        </div>
+      </div>
+    </dialog>
+    <dialog id="dialog-promo" class="profile-dialog">
+      <div class="profile-dialog__inner">
+        <p>Я добре обдумав(ла) рішення та усвідомлюю всі наслідки активації послуги.</p>
+        <div class="profile-dialog__actions">
+          <a href="?module=omegatv&amp;subscribe=7408" class="btn">Згоден</a>
+          <button type="button" class="btn btn--ghost" data-dialog-close>Відміна</button>
+        </div>
+      </div>
+    </dialog>
+    <dialog id="dialog-sale" class="profile-dialog">
+      <div class="profile-dialog__inner">
+        <p>Я добре обдумав(ла) рішення та усвідомлюю всі наслідки активації послуги.</p>
+        <div class="profile-dialog__actions">
+          <a href="?module=omegatv&amp;subscribe=7412" class="btn">Згоден</a>
+          <button type="button" class="btn btn--ghost" data-dialog-close>Відміна</button>
+        </div>
+      </div>
+    </dialog>
+    <dialog id="dialog-viphd" class="profile-dialog">
+      <div class="profile-dialog__inner">
+        <p>Я добре обдумав(ла) рішення та усвідомлюю всі наслідки активації послуги.</p>
+        <div class="profile-dialog__actions">
+          <a href="?module=omegatv&amp;subscribe=7411" class="btn">Згоден</a>
+          <button type="button" class="btn btn--ghost" data-dialog-close>Відміна</button>
+        </div>
+      </div>
+    </dialog>
+
+    <footer class="site-footer container">2018–2025 © ОЛЛ-КОМ</footer>
+    <a href="#" class="scroll-top" aria-label="Наверх">↑</a>
+  </body>
+</html>

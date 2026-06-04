@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Профіль — Кабінет ОЛЛ-КОМ</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/profile.css" />
+    <script src="js/common.js" defer></script>
+    <script src="js/profile-menu.js" defer></script>
+    <script src="js/profile.js" defer></script>
+  </head>
+  <body class="has-bg page-sub page-profile" data-profile-page="profile-main.html">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a href="index.html" class="site-logo">
+          <img src="images/logo.svg" alt="ОЛЛ-КОМ" width="120" height="48" />
+        </a>
+        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="navMenu" aria-label="Меню">
+          <span></span><span></span><span></span>
+        </button>
+        <nav id="navMenu" class="site-nav">
+          <a href="index.html">На сайт</a>
+          <a href="profile-payment.html">Оплата</a>
+          <a href="speed-test-page.html">Speed Test</a>
+          <a href="profile-main.html" class="nav-cta is-active">Кабінет</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="site-wrap container profile-layout">
+      <aside id="profileSidebar" class="card profile-sidebar reveal"></aside>
+
+      <main class="profile-content reveal reveal-delay-1">
+        <div class="card profile-panel">
+          <header class="page-head page-head--compact">
+            <span class="section-eyebrow">Кабінет</span>
+            <h1 class="page-head__title">Профіль користувача</h1>
+          </header>
+
+          <div class="balance-card">
+            <div class="balance-card__item">
+              <div class="balance-card__label">Баланс</div>
+              <div class="balance-card__value">13 UAH</div>
+            </div>
+            <div class="balance-card__item">
+              <div class="balance-card__label">Стан</div>
+              <div class="balance-card__value balance-card__value--ok">Активний</div>
+            </div>
+            <div class="balance-card__item">
+              <div class="balance-card__label">Достатньо до</div>
+              <div class="balance-card__value">01.07.2026</div>
+            </div>
+          </div>
+
+          <div class="data-table-wrap">
+            <table class="data-table">
+              <tbody>
+                <tr><td class="label-cell">Адреса</td><td>Ужгород, Володимирська 82/7</td></tr>
+                <tr><td class="label-cell">ПІБ</td><td>Крупчинський Андрій Іванович</td></tr>
+                <tr><td class="label-cell">Логін</td><td>volodimirska82ap7_l843</td></tr>
+                <tr><td class="label-cell">Пароль</td><td>••••••••</td></tr>
+                <tr><td class="label-cell">IP</td><td>100.111.39.210</td></tr>
+                <tr><td class="label-cell">Стільниковий</td><td>+380 99 787 15 50</td></tr>
+                <tr><td class="label-cell">Угода</td><td>2026019368</td></tr>
+                <tr><td class="label-cell">Кредит</td><td>0 UAH</td></tr>
+                <tr><td class="label-cell">Тариф</td><td>1G_400GRN</td></tr>
+                <tr><td class="label-cell">Вартість тарифу</td><td>400 UAH</td></tr>
+                <tr><td class="label-cell">Швидкість тарифу</td><td>1000 Мбіт/с</td></tr>
+                <tr><td class="label-cell">Стан рахунку</td><td>Рахунок активний · вистачить на 28 дн.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <footer class="site-footer container">2018–2025 © ОЛЛ-КОМ</footer>
+    <a href="#" class="scroll-top" aria-label="Наверх">↑</a>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Оплати — Кабінет ОЛЛ-КОМ</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/profile.css" />
+    <script src="js/common.js" defer></script>
+    <script src="js/profile-menu.js" defer></script>
+    <script src="js/profile.js" defer></script>
+  </head>
+  <body class="has-bg page-sub page-profile" data-profile-page="profile-payment-history.html">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a href="index.html" class="site-logo">
+          <img src="images/logo.svg" alt="ОЛЛ-КОМ" width="120" height="48" />
+        </a>
+        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="navMenu" aria-label="Меню">
+          <span></span><span></span><span></span>
+        </button>
+        <nav id="navMenu" class="site-nav">
+          <a href="index.html">На сайт</a>
+          <a href="profile-payment.html">Оплата</a>
+          <a href="speed-test-page.html">Speed Test</a>
+          <a href="profile-main.html" class="nav-cta">Кабінет</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="site-wrap container profile-layout">
+      <aside id="profileSidebar" class="card profile-sidebar reveal"></aside>
+
+      <main class="profile-content reveal reveal-delay-1">
+        <div class="card profile-panel">
+          <header class="page-head page-head--compact">
+            <span class="section-eyebrow">Історія</span>
+            <h1 class="page-head__title">Останні оплати</h1>
+          </header>
+
+          <div class="data-table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Дата</th>
+                  <th>Сума</th>
+                  <th>Баланс до</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2026-05-31 23:35:01</td>
+                  <td>360 UAH</td>
+                  <td>53</td>
+                </tr>
+                <tr>
+                  <td>2026-05-01 08:55:01</td>
+                  <td>450 UAH</td>
+                  <td>−397</td>
+                </tr>
+                <tr>
+                  <td>2026-04-01 01:15:00</td>
+                  <td>403 UAH</td>
+                  <td>−400</td>
+                </tr>
+                <tr>
+                  <td>2026-03-01 20:35:00</td>
+                  <td>400 UAH</td>
+                  <td>−400</td>
+                </tr>
+                <tr>
+                  <td>2026-02-02 14:25:15</td>
+                  <td>400 UAH</td>
+                  <td>−400</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <footer class="site-footer container">2018–2025 © ОЛЛ-КОМ</footer>
+    <a href="#" class="scroll-top" aria-label="Наверх">↑</a>
+  </body>
+</html>

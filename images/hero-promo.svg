@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" role="img">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f7f7f8"/>
+      <stop offset="100%" stop-color="#ececee"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="420" fill="url(#bg1)"/>
+  <circle cx="1050" cy="80" r="120" fill="#ffcc00" opacity="0.25"/>
+  <circle cx="150" cy="350" r="90" fill="#ffcc00" opacity="0.15"/>
+  <rect x="80" y="100" width="520" height="8" rx="4" fill="#ffcc00"/>
+  <text x="80" y="175" font-family="Segoe UI, Arial, sans-serif" font-size="52" font-weight="700" fill="#1a1a1a">:FV9=V B0@8D8</text>
+  <text x="80" y="230" font-family="Segoe UI, Arial, sans-serif" font-size="26" fill="#6b7280">(284:89 V=B5@=5B 2V4 200 3@=/<VA</text>
+  <rect x="80" y="260" width="200" height="48" rx="24" fill="#ffcc00"/>
+  <text x="130" y="292" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="600" fill="#1a1a1a">5B0;L=VH5</text>
+  <g transform="translate(720 80)">
+    <rect x="0" y="0" width="380" height="260" rx="16" fill="#ffffff" stroke="#d8d8dc" stroke-width="2"/>
+    <text x="30" y="50" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="700" fill="#1a1a1a">1000 1VB/A</text>
+    <text x="30" y="85" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#6b7280">@5<VC< · 400 3@=</text>
+    <path d="M30 120h320" stroke="#ececee" stroke-width="2"/>
+    <rect x="30" y="150" width="280" height="12" rx="6" fill="#ececee"/>
+    <rect x="30" y="150" width="220" height="12" rx="6" fill="#ffcc00"/>
+    <text x="30" y="210" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#9ca3af">PON · #63>@>4 B0 @09>=</text>
+  </g>
+</svg>

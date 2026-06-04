@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img">
+  <rect width="200" height="200" rx="16" fill="#ffffff" stroke="#ececee" stroke-width="2"/>
+  <rect x="30" y="50" width="140" height="90" rx="12" fill="#f7f7f8"/>
+  <text x="100" y="95" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" fill="#1a1a1a">IPAYZ</text>
+  <text x="100" y="120" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="11" fill="#6b7280">VISA · MasterCard</text>
+  <text x="100" y="138" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="10" fill="#9ca3af">Apple Pay · Google Pay</text>
+  <circle cx="55" cy="155" r="12" fill="#ffcc00"/>
+  <circle cx="85" cy="155" r="12" fill="#6b7280"/>
+  <circle cx="115" cy="155" r="12" fill="#1a1a1a"/>
+</svg>

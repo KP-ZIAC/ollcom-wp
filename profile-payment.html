@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Онлайн платежі — Кабінет ОЛЛ-КОМ</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/profile.css" />
+    <script src="js/common.js" defer></script>
+    <script src="js/profile-menu.js" defer></script>
+    <script src="js/profile.js" defer></script>
+  </head>
+  <body class="has-bg page-sub page-profile" data-profile-page="profile-payment.html">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a href="index.html" class="site-logo">
+          <img src="images/logo.svg" alt="ОЛЛ-КОМ" width="120" height="48" />
+        </a>
+        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="navMenu" aria-label="Меню">
+          <span></span><span></span><span></span>
+        </button>
+        <nav id="navMenu" class="site-nav">
+          <a href="index.html">На сайт</a>
+          <a href="profile-payment.html">Оплата</a>
+          <a href="speed-test-page.html">Speed Test</a>
+          <a href="profile-main.html" class="nav-cta">Кабінет</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="site-wrap container profile-layout">
+      <aside id="profileSidebar" class="card profile-sidebar reveal"></aside>
+
+      <main class="profile-content reveal reveal-delay-1">
+        <div class="card profile-panel">
+          <header class="page-head page-head--compact">
+            <span class="section-eyebrow">Оплата</span>
+            <h1 class="page-head__title">Онлайн платежі</h1>
+          </header>
+          <p class="profile-panel__lead">Оберіть зручний спосіб поповнення рахунку</p>
+
+          <div class="pay-grid">
+            <article class="card pay-card">
+              <form action="https://back.ollcom.net.ua/ipayz/" method="GET">
+                <input type="hidden" name="customer_id" value="2209733190" />
+                <input
+                  type="image"
+                  src="images/paysys-ipayz.jpg"
+                  alt="IPAYZ — VISA, MasterCard, Apple Pay, Google Pay"
+                  width="180"
+                  height="180"
+                />
+              </form>
+              <p class="pay-card__label">IPAYZ — VISA, MasterCard, Apple Pay, Google Pay</p>
+            </article>
+
+            <article class="card pay-card">
+              <form action="https://back.ollcom.net.ua/mypayprivat/" method="GET">
+                <input type="hidden" name="customer_id" value="2209733190" />
+                <input
+                  type="image"
+                  src="images/paysys-privat.jpg"
+                  alt="MYPAYPRIVAT — Приватбанк, VISA, MasterCard"
+                  width="180"
+                  height="180"
+                />
+              </form>
+              <p class="pay-card__label">MYPAYPRIVAT — Приватбанк, VISA, MasterCard</p>
+            </article>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <footer class="site-footer container">2018–2025 © ОЛЛ-КОМ</footer>
+    <a href="#" class="scroll-top" aria-label="Наверх">↑</a>
+  </body>
+</html>

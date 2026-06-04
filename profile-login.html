@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="google" content="notranslate" />
+    <title>Вхід — Кабінет ОЛЛ-КОМ</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/profile.css" />
+    <script src="js/common.js" defer></script>
+    <script src="js/profile.js" defer></script>
+  </head>
+  <body class="has-bg page-sub page-login">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a href="index.html" class="site-logo">
+          <img src="images/logo.svg" alt="ОЛЛ-КОМ" width="120" height="48" />
+        </a>
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="navMenu"
+          aria-label="Меню"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav id="navMenu" class="site-nav">
+          <a href="index.html">На сайт</a>
+          <a href="index.html#inet">Тарифи</a>
+          <a href="speed-test-page.html">Speed Test</a>
+          <a href="profile-login.html" class="nav-cta nav-login is-active">Вхід</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="site-wrap container profile-layout profile-layout--login">
+      <main class="reveal">
+        <header class="login-hero">
+          <span class="section-eyebrow">Особистий кабінет</span>
+          <h1 class="login-hero__title">Вхід для абонентів</h1>
+        </header>
+
+        <div class="card login-card">
+          <p class="login-card__lead">Введіть логін і пароль від облікового запису</p>
+
+          <form action="" method="POST" class="login-form" novalidate>
+            <div class="form-group">
+              <label class="form-label" for="ulogin">Логін</label>
+              <input
+                id="ulogin"
+                class="form-input"
+                type="text"
+                name="ulogin"
+                autocomplete="username"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="upassword">Пароль</label>
+              <input
+                id="upassword"
+                class="form-input"
+                type="password"
+                name="upassword"
+                autocomplete="current-password"
+                required
+              />
+            </div>
+            <p class="login-error" role="alert" hidden></p>
+            <button type="submit" class="btn">Увійти</button>
+          </form>
+          <p class="login-hint">Демо-доступ для презентації: <code>admin</code> / <code>admin</code></p>
+
+          <div class="login-footer">
+            <form action="" method="GET">
+              <label class="visually-hidden" for="changelang">Мова</label>
+              <select id="changelang" name="changelang" class="lang-select" onchange="this.form.submit()">
+                <option value="-">Мова</option>
+                <option value="ukrainian" selected>Українська</option>
+                <option value="english">English</option>
+                <option value="russian">Русский</option>
+              </select>
+            </form>
+            <span>
+              <a href="https://ollcom.net.ua/">Олл-ком</a> ·
+              <a href="https://ubilling.net.ua" target="_blank" rel="noopener">Ubilling</a>
+            </span>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <footer class="site-footer container">2018–2025 © ОЛЛ-КОМ</footer>
+  </body>
+</html>

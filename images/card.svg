@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80" role="img" aria-label="!?>A>18 >?;0B8">
+  <rect x="0" y="10" width="90" height="56" rx="8" fill="#1a1a1a"/>
+  <rect x="14" y="38" width="50" height="8" rx="2" fill="#6b7280"/>
+  <circle cx="70" cy="32" r="10" fill="#ffcc00" opacity="0.8"/>
+  <circle cx="58" cy="32" r="10" fill="#e6b800" opacity="0.6"/>
+  <rect x="105" y="10" width="90" height="56" rx="8" fill="#f7f7f8" stroke="#d8d8dc" stroke-width="2"/>
+  <text x="120" y="45" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#6b7280">VISA</text>
+  <rect x="105" y="10" width="45" height="56" rx="8" fill="#ffcc00" opacity="0.35"/>
+</svg>
